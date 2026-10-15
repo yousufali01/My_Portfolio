@@ -54,14 +54,14 @@ const Hero = () => {
           </div>
 
           {/* Academic & Recognition Badges */}
-          <div className="flex flex-wrap items-center gap-3">
-            <div className="flex flex-wrap items-center gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/90 border border-slate-800 rounded-xl px-4 py-2 w-fit">
-              <HiOutlineAcademicCap className="text-cyan-400 text-lg shrink-0" />
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-3">
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 text-xs sm:text-sm text-slate-300 bg-slate-900/90 border border-slate-800 rounded-xl px-3 sm:px-4 py-2 max-w-full">
+              <HiOutlineAcademicCap className="text-cyan-400 text-base sm:text-lg shrink-0" />
               <span>
                 <strong>B.Sc. in CSE (2nd Yr, 6th Trimester)</strong> at{" "}
                 <span className="text-white font-medium">UIU</span>
               </span>
-              <span className="text-slate-600">•</span>
+              <span className="text-slate-600 hidden xs:inline">•</span>
               <span className="text-emerald-400 font-medium">
                 Diploma (4 Yrs, GPA 3.48)
               </span>
@@ -69,13 +69,13 @@ const Hero = () => {
 
             <a
               href="#achievements"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-950/70 to-yellow-950/70 hover:from-amber-900/80 hover:to-yellow-900/80 border border-amber-500/40 hover:border-amber-400 text-amber-300 rounded-xl px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm group"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-950/70 to-yellow-950/70 hover:from-amber-900/80 hover:to-yellow-900/80 border border-amber-500/40 hover:border-amber-400 text-amber-300 rounded-xl px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm group max-w-full"
             >
-              <span className="text-sm group-hover:scale-110 transition-transform">🏆</span>
-              <span>
+              <span className="text-sm shrink-0 group-hover:scale-110 transition-transform">🏆</span>
+              <span className="break-words">
                 <strong>UIU Hack Day 2026 Champion</strong> (Team 405 Found)
               </span>
-              <span className="text-amber-400/80 group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+              <span className="text-amber-400/80 shrink-0 group-hover:translate-x-0.5 transition-transform">&rarr;</span>
             </a>
           </div>
 

@@ -141,8 +141,8 @@ const Navbar = () => {
       {/* Mobile Menu Drawer */}
       <div
         className={`lg:hidden bg-[#0d1629]/95 backdrop-blur-xl border-b border-slate-800 shadow-2xl transition-all duration-300 ease-in-out ${
-          menuOpen ? "max-h-[500px] py-6 px-6 opacity-100" : "max-h-0 py-0 px-6 opacity-0 pointer-events-none"
-        } overflow-hidden`}
+          menuOpen ? "max-h-[85vh] overflow-y-auto py-5 px-6 opacity-100" : "max-h-0 py-0 px-6 opacity-0 pointer-events-none overflow-hidden"
+        }`}
       >
         <ul className="flex flex-col gap-3">
           {navLinks.map((link) => {

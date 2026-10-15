@@ -101,7 +101,7 @@ export const profileData = {
   ],
 
   stats: [
-    { label: "Hackathon Title", value: "Champion '26" },
+    { label: "Hackathon", value: "Champion" },
     { label: "Diploma GPA", value: "3.48" },
     { label: "Diploma Duration", value: "4 Yrs" },
     { label: "Industrial Training", value: "3 Mos" }

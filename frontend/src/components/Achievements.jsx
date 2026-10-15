@@ -57,48 +57,49 @@ const Achievements = () => {
                   loading="lazy"
                 />
 
-                {/* Champion Banner Pill Overlay */}
-                <div className="absolute top-3 left-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black text-xs px-3 py-1.5 rounded-lg shadow-lg flex items-center gap-1.5 border border-amber-300">
-                  <FaTrophy className="text-sm" />
-                  <span>UIU HACK DAY 2026 CHAMPION</span>
-                </div>
+                {/* Top Badges Container */}
+                <div className="absolute top-3 inset-x-3 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
+                  <div className="bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black text-[11px] sm:text-xs px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg shadow-lg flex items-center gap-1.5 border border-amber-300 pointer-events-auto">
+                    <FaTrophy className="text-xs sm:text-sm shrink-0" />
+                    <span>UIU HACK DAY 2026 CHAMPION</span>
+                  </div>
 
-                {/* Live Verified Tag */}
-                <div className="absolute top-3 right-3 bg-emerald-950/90 text-emerald-300 border border-emerald-500/40 text-[11px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1.5 backdrop-blur-md">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                  <span>Live on Netlify</span>
+                  <div className="bg-emerald-950/90 text-emerald-300 border border-emerald-500/40 text-[10px] sm:text-[11px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1.5 backdrop-blur-md pointer-events-auto">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Live on Netlify</span>
+                  </div>
                 </div>
 
                 {/* Bottom Overlay Info Bar */}
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-transparent p-4 flex items-center justify-between text-xs text-slate-300">
-                  <span className="font-mono text-cyan-300 font-semibold">
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/90 to-transparent p-3 sm:p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 text-[11px] sm:text-xs text-slate-300">
+                  <span className="font-mono text-cyan-300 font-semibold truncate">
                     Universal Communication · Deaf · Blind · Normal
                   </span>
-                  <span className="text-amber-400 font-bold">Prize: BDT 5,000</span>
+                  <span className="text-amber-400 font-bold shrink-0">Prize: BDT 5,000</span>
                 </div>
               </div>
 
               {/* Quick Achievement Stats Grid */}
-              <div className="grid grid-cols-3 gap-3 text-center">
-                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-                  <div className="text-amber-400 font-extrabold text-sm sm:text-base flex items-center justify-center gap-1">
-                    <FaTrophy /> 1st Place
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 text-center">
+                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-2.5 sm:p-3 flex flex-col items-center justify-center min-h-[64px]">
+                  <div className="text-amber-400 font-extrabold text-xs sm:text-sm lg:text-base flex items-center justify-center gap-1">
+                    <FaTrophy className="shrink-0 text-xs sm:text-sm" /> 1st Place
                   </div>
-                  <div className="text-[11px] text-slate-400 mt-0.5">Champion &amp; Best Idea</div>
+                  <div className="text-[10px] sm:text-[11px] text-slate-400 mt-0.5 leading-tight">Champion &amp; Best Idea</div>
                 </div>
 
-                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-                  <div className="text-emerald-400 font-extrabold text-sm sm:text-base flex items-center justify-center gap-1">
-                    <HiOutlineCurrencyBangladeshi className="text-lg" /> 5,000 BDT
+                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-2.5 sm:p-3 flex flex-col items-center justify-center min-h-[64px]">
+                  <div className="text-emerald-400 font-extrabold text-xs sm:text-sm lg:text-base flex items-center justify-center gap-1">
+                    <HiOutlineCurrencyBangladeshi className="text-sm sm:text-lg shrink-0" /> 5,000 BDT
                   </div>
-                  <div className="text-[11px] text-slate-400 mt-0.5">Prize Money</div>
+                  <div className="text-[10px] sm:text-[11px] text-slate-400 mt-0.5 leading-tight">Prize Money</div>
                 </div>
 
-                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-3">
-                  <div className="text-cyan-400 font-extrabold text-sm sm:text-base flex items-center justify-center gap-1">
-                    <FaUsers /> 405 Found
+                <div className="bg-slate-900/80 border border-slate-800 rounded-xl p-2.5 sm:p-3 flex flex-col items-center justify-center min-h-[64px]">
+                  <div className="text-cyan-400 font-extrabold text-xs sm:text-sm lg:text-base flex items-center justify-center gap-1">
+                    <FaUsers className="shrink-0 text-xs sm:text-sm" /> 405 Found
                   </div>
-                  <div className="text-[11px] text-slate-400 mt-0.5">Winning Team</div>
+                  <div className="text-[10px] sm:text-[11px] text-slate-400 mt-0.5 leading-tight">Winning Team</div>
                 </div>
               </div>
             </div>

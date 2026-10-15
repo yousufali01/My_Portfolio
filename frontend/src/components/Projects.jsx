@@ -41,24 +41,27 @@ const Projects = () => {
                 className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 loading="lazy"
               />
-              {project.award ? (
-                <div className="absolute top-3 left-3 bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black text-[11px] px-3 py-1 rounded-lg shadow-lg flex items-center gap-1.5 border border-amber-300">
-                  <span>🏆</span>
-                  <span>{project.award}</span>
-                </div>
-              ) : (
-                project.category && (
-                  <span className="absolute top-3 left-3 bg-[#0a0f1d]/90 backdrop-blur-md text-cyan-300 border border-cyan-500/30 text-[11px] font-medium px-2.5 py-1 rounded-lg shadow-sm">
-                    {project.category}
+              {/* Thumbnail Badges Bar */}
+              <div className="absolute top-3 inset-x-3 flex flex-wrap items-center justify-between gap-2 pointer-events-none">
+                {project.award ? (
+                  <div className="bg-gradient-to-r from-amber-500 to-yellow-500 text-slate-950 font-black text-[10px] sm:text-[11px] px-2.5 sm:px-3 py-1 rounded-lg shadow-lg flex items-center gap-1.5 border border-amber-300 pointer-events-auto">
+                    <span>🏆</span>
+                    <span>{project.award}</span>
+                  </div>
+                ) : (
+                  project.category && (
+                    <span className="bg-[#0a0f1d]/90 backdrop-blur-md text-cyan-300 border border-cyan-500/30 text-[11px] font-medium px-2.5 py-1 rounded-lg shadow-sm pointer-events-auto">
+                      {project.category}
+                    </span>
+                  )
+                )}
+                {project.liveVerified && (
+                  <span className="bg-emerald-950/90 text-emerald-300 border border-emerald-500/40 text-[10px] sm:text-[11px] font-medium px-2.5 py-0.5 rounded-full flex items-center gap-1 shadow-xs pointer-events-auto">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Verified Live
                   </span>
-                )
-              )}
-              {project.liveVerified && (
-                <span className="absolute top-3 right-3 bg-emerald-950/90 text-emerald-300 border border-emerald-500/40 text-[11px] font-medium px-2 py-0.5 rounded-full flex items-center gap-1 shadow-xs">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  Verified Live
-                </span>
-              )}
+                )}
+              </div>
             </div>
 
             {/* Card Body */}

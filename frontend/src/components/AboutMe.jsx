@@ -117,11 +117,18 @@ const AboutMe = () => {
             </div>
 
             {/* Quick Metrics Bar */}
-            <div className="grid grid-cols-4 gap-2 pt-6 mt-6 border-t border-slate-800 text-center">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-6 mt-6 border-t border-slate-800 text-center">
               {profileData.stats.map((stat) => (
-                <div key={stat.label} className="p-2 bg-slate-900/80 rounded-xl border border-slate-800/80">
-                  <span className="block text-xl font-black text-cyan-400">{stat.value}</span>
-                  <span className="text-[10px] text-slate-400 font-medium leading-tight block mt-0.5">{stat.label}</span>
+                <div
+                  key={stat.label}
+                  className="p-3 bg-slate-900/90 rounded-xl border border-slate-800 flex flex-col items-center justify-center min-h-[72px] hover:border-cyan-500/30 transition-colors"
+                >
+                  <span className="block text-base sm:text-lg font-black text-cyan-400 tracking-tight leading-tight">
+                    {stat.value}
+                  </span>
+                  <span className="text-[11px] text-slate-400 font-medium leading-tight block mt-1">
+                    {stat.label}
+                  </span>
                 </div>
               ))}
             </div>
