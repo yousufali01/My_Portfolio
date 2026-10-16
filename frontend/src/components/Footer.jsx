@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from "react-icons/fa";
 import { HiMail, HiArrowUp } from "react-icons/hi";
 import profileData from "../data/profile";
 
@@ -26,12 +26,16 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-slate-400 max-w-md leading-relaxed">
-              Full-Stack Web Developer and CSE Undergraduate at United International University (UIU). Committed to building responsive, secure, and user-centered web applications with React, Next.js, and modern technologies.
+              Full-Stack Web Developer and CSE Undergraduate at United
+              International University (UIU). Committed to building responsive,
+              secure, and user-centered web applications with React, Next.js,
+              and modern technologies.
             </p>
             <div className="pt-1 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
               <span className="text-xs text-slate-300 font-medium">
-                Open to Junior Full-Stack / Frontend Opportunities &amp; Internships
+                Open to Junior Full-Stack / Frontend Opportunities &amp;
+                Internships
               </span>
             </div>
           </div>
@@ -58,12 +62,18 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/#education" className="hover:text-cyan-400 transition">
+                <a
+                  href="/#education"
+                  className="hover:text-cyan-400 transition"
+                >
                   Education
                 </a>
               </li>
               <li>
-                <a href="/#experience" className="hover:text-cyan-400 transition">
+                <a
+                  href="/#experience"
+                  className="hover:text-cyan-400 transition"
+                >
                   Practical Journey
                 </a>
               </li>
@@ -73,7 +83,10 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link to="/resume" className="text-cyan-400 font-semibold hover:underline">
+                <Link
+                  to="/resume"
+                  className="text-cyan-400 font-semibold hover:underline"
+                >
                   Resume / CV &rarr;
                 </Link>
               </li>
@@ -107,6 +120,28 @@ const Footer = () => {
               >
                 <FaLinkedin className="text-lg" />
               </a>
+
+              <a
+                href={profileData.contact.facebook}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Md. Yousuf Ali Facebook Profile"
+                title="Facebook Profile"
+                className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-blue-500 hover:border-blue-500/50 hover:bg-slate-800 transition shadow-xs"
+              >
+                <FaFacebook className="text-xl" />
+              </a>
+
+              <a
+                href={profileData.contact.instagram}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Md. Yousuf Ali Instagram Profile"
+                title="Instagram Profile"
+                className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-pink-400 hover:border-pink-500/50 hover:bg-slate-800 transition shadow-xs"
+              >
+                <FaInstagram className="text-xl" />
+              </a>
               <a
                 href={`mailto:${profileData.contact.email}`}
                 aria-label="Send Direct Email"
@@ -115,16 +150,15 @@ const Footer = () => {
                 <HiMail className="text-lg" />
               </a>
             </div>
-            <p className="text-xs text-slate-500 pt-1">
-              Dhaka, Bangladesh
-            </p>
+            <p className="text-xs text-slate-500 pt-1">Dhaka, Bangladesh</p>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>
-            &copy; 2026 {profileData.fullName}. Designed &amp; Engineered with React 19, Next.js standards &amp; Tailwind CSS.
+            &copy; 2026 {profileData.fullName}. Designed &amp; Engineered with
+            React 19, Next.js standards &amp; Tailwind CSS.
           </p>
 
           <button

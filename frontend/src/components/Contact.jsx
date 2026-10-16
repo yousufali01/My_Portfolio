@@ -1,3 +1,4 @@
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
 import {
   HiOutlineMail,
@@ -32,7 +33,11 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.message.trim()
+    ) {
       setStatus({
         submitting: false,
         submitted: false,
@@ -71,7 +76,10 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-12">
+    <section
+      id="contact"
+      className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto scroll-mt-12"
+    >
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-cyan-950/70 border border-cyan-500/30 text-cyan-300 text-xs font-semibold uppercase tracking-wider">
@@ -80,11 +88,15 @@ const Contact = () => {
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
-          Let's <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">Connect</span>
+          Let's{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">
+            Connect
+          </span>
         </h2>
 
         <p className="text-base sm:text-lg text-slate-400">
-          Have an internship, junior full-stack opportunity, collaborative project, or tech inquiry? My inbox and phone are always open.
+          Have an internship, junior full-stack opportunity, collaborative
+          project, or tech inquiry? My inbox and phone are always open.
         </p>
       </div>
 
@@ -96,7 +108,9 @@ const Contact = () => {
               Contact Information
             </h3>
             <p className="text-sm text-slate-300 leading-relaxed">
-              I am actively seeking junior frontend, full-stack, and internship roles. Feel free to reach out directly via email, phone, or WhatsApp.
+              I am actively seeking junior frontend, full-stack, and internship
+              roles. Feel free to reach out directly via email, phone, or
+              WhatsApp.
             </p>
 
             <div className="space-y-4 pt-1">
@@ -211,6 +225,28 @@ const Contact = () => {
                 </a>
 
                 <a
+                  href={profileData.contact.facebook}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Md. Yousuf Ali Facebook Profile"
+                  title="Facebook Profile"
+                  className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-blue-500 hover:border-blue-500/50 hover:bg-slate-800 transition shadow-xs"
+                >
+                  <FaFacebook className="text-xl" />
+                </a>
+
+                <a
+                  href={profileData.contact.instagram}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Md. Yousuf Ali Instagram Profile"
+                  title="Instagram Profile"
+                  className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-pink-400 hover:border-pink-500/50 hover:bg-slate-800 transition shadow-xs"
+                >
+                  <FaInstagram className="text-xl" />
+                </a>
+
+                <a
                   href={profileData.contact.whatsapp}
                   target="_blank"
                   rel="noreferrer"
@@ -232,7 +268,8 @@ const Contact = () => {
               Send a Direct Message
             </h3>
             <p className="text-sm text-slate-400 mb-6">
-              Complete the form below to initiate a conversation or inquire about technical roles.
+              Complete the form below to initiate a conversation or inquire
+              about technical roles.
             </p>
 
             {/* Success Notification */}
@@ -240,9 +277,12 @@ const Contact = () => {
               <div className="mb-6 p-4 rounded-xl bg-emerald-950/80 border border-emerald-500/40 text-emerald-200 flex items-start gap-3">
                 <HiOutlineCheckCircle className="text-2xl text-emerald-400 shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-bold text-emerald-300">Message dispatched successfully!</p>
+                  <p className="text-sm font-bold text-emerald-300">
+                    Message dispatched successfully!
+                  </p>
                   <p className="text-xs text-emerald-200/90 mt-0.5">
-                    Thank you for reaching out. I'll review your inquiry and respond to your email promptly.
+                    Thank you for reaching out. I'll review your inquiry and
+                    respond to your email promptly.
                   </p>
                 </div>
               </div>
@@ -259,7 +299,10 @@ const Contact = () => {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Name */}
                 <div>
-                  <label htmlFor="contact-name" className="block text-xs font-semibold text-slate-300 uppercase mb-1.5">
+                  <label
+                    htmlFor="contact-name"
+                    className="block text-xs font-semibold text-slate-300 uppercase mb-1.5"
+                  >
                     Your Name <span className="text-rose-400">*</span>
                   </label>
                   <input
@@ -276,7 +319,10 @@ const Contact = () => {
 
                 {/* Email */}
                 <div>
-                  <label htmlFor="contact-email" className="block text-xs font-semibold text-slate-300 uppercase mb-1.5">
+                  <label
+                    htmlFor="contact-email"
+                    className="block text-xs font-semibold text-slate-300 uppercase mb-1.5"
+                  >
                     Email Address <span className="text-rose-400">*</span>
                   </label>
                   <input
@@ -294,7 +340,10 @@ const Contact = () => {
 
               {/* Subject */}
               <div>
-                <label htmlFor="contact-subject" className="block text-xs font-semibold text-slate-300 uppercase mb-1.5">
+                <label
+                  htmlFor="contact-subject"
+                  className="block text-xs font-semibold text-slate-300 uppercase mb-1.5"
+                >
                   Subject / Opportunity Type
                 </label>
                 <input
@@ -310,7 +359,10 @@ const Contact = () => {
 
               {/* Message */}
               <div>
-                <label htmlFor="contact-message" className="block text-xs font-semibold text-slate-300 uppercase mb-1.5">
+                <label
+                  htmlFor="contact-message"
+                  className="block text-xs font-semibold text-slate-300 uppercase mb-1.5"
+                >
                   Your Message <span className="text-rose-400">*</span>
                 </label>
                 <textarea
@@ -345,7 +397,8 @@ const Contact = () => {
               <div className="pt-2 flex items-center gap-2 text-[11px] text-slate-400">
                 <HiOutlineInformationCircle className="text-cyan-400 text-sm shrink-0" />
                 <span>
-                  Direct email and phone links are always active for immediate response.
+                  Direct email and phone links are always active for immediate
+                  response.
                 </span>
               </div>
             </form>

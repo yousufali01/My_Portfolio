@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import {
   HiArrowRight,
   HiSparkles,
@@ -144,6 +145,28 @@ const Hero = () => {
                 className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-blue-400 hover:border-blue-500/50 hover:bg-slate-800 transition shadow-xs"
               >
                 <FaLinkedin className="text-xl" />
+              </a>
+
+              <a
+                href={profileData.contact.facebook}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Md. Yousuf Ali Facebook Profile"
+                title="Facebook Profile"
+                className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-blue-500 hover:border-blue-500/50 hover:bg-slate-800 transition shadow-xs"
+              >
+                <FaFacebook className="text-xl" />
+              </a>
+
+              <a
+                href={profileData.contact.instagram}
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Md. Yousuf Ali Instagram Profile"
+                title="Instagram Profile"
+                className="p-3.5 rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 hover:text-pink-400 hover:border-pink-500/50 hover:bg-slate-800 transition shadow-xs"
+              >
+                <FaInstagram className="text-xl" />
               </a>
 
               <a

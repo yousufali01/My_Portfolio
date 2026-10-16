@@ -72,6 +72,8 @@ export const profileData = {
     githubVerified: true,
     linkedin: "https://www.linkedin.com/in/mdyousufali01/",
     linkedinVerified: false,
+    facebook: "https://www.facebook.com/md.yousuf.ali.102868",
+    instagram: "https://www.instagram.com/yousuf__o__ali?mdxt=MXhwcnhrdHJ3bjRxaA%3D%3D&utm_source=qr",
     resumePdfUrl: "/Md_Yousuf_Ali_Resume.pdf",
     resumeViewUrl: "/resume"
   },
