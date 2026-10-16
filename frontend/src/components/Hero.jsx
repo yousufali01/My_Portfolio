@@ -7,12 +7,7 @@ import {
   HiOutlineDocumentText,
   HiPhone,
 } from "react-icons/hi";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaReact,
-  FaNodeJs,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTypescript,
@@ -42,9 +37,10 @@ const Hero = () => {
 
           {/* Headline & Name */}
           <div className="space-y-3">
-            <p className="text-slate-400 font-mono text-sm sm:text-base flex items-center gap-2">
-              <span className="text-cyan-400 font-bold">&gt;</span> Hello world, I am
+            <p className="text-slate-400 font-mono text-base sm:text-lg flex items-center gap-2">
+              <span className="text-cyan-400 font-bold">&gt;</span> Hello, I’m
             </p>
+
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-tight">
               {profileData.fullName}
             </h1>
@@ -71,22 +67,27 @@ const Hero = () => {
               href="#achievements"
               className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-950/70 to-yellow-950/70 hover:from-amber-900/80 hover:to-yellow-900/80 border border-amber-500/40 hover:border-amber-400 text-amber-300 rounded-xl px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold transition-all duration-300 shadow-sm group max-w-full"
             >
-              <span className="text-sm shrink-0 group-hover:scale-110 transition-transform">🏆</span>
+              <span className="text-sm shrink-0 group-hover:scale-110 transition-transform">
+                🏆
+              </span>
               <span className="break-words">
                 <strong>UIU Hack Day 2026 Champion</strong> (Team 405 Found)
               </span>
-              <span className="text-amber-400/80 shrink-0 group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+              <span className="text-amber-400/80 shrink-0 group-hover:translate-x-0.5 transition-transform">
+                &rarr;
+              </span>
             </a>
           </div>
 
           {/* Professional Introduction / Headline */}
           <p className="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
-            I build modern, responsive, and secure full-stack web applications with{" "}
-            <span className="text-cyan-300 font-semibold">React.js</span>,{" "}
+            I build modern, responsive, and secure full-stack web applications
+            with <span className="text-cyan-300 font-semibold">React.js</span>,{" "}
             <span className="text-cyan-300 font-semibold">Next.js</span>,{" "}
             <span className="text-cyan-300 font-semibold">TypeScript</span>, and{" "}
             <span className="text-cyan-300 font-semibold">Node.js</span>.
-            Dedicated to writing maintainable code, solving practical real-world problems, and exploring cybersecurity principles.
+            Dedicated to writing maintainable code, solving practical real-world
+            problems, and exploring cybersecurity principles.
           </p>
 
           {/* Action CTAs */}
@@ -178,7 +179,8 @@ const Hero = () => {
                 <SiMongodb className="text-emerald-500 text-base" /> MongoDB
               </span>
               <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-900/90 text-slate-200 border border-slate-800">
-                <SiTailwindcss className="text-teal-400 text-base" /> Tailwind CSS
+                <SiTailwindcss className="text-teal-400 text-base" /> Tailwind
+                CSS
               </span>
             </div>
           </div>
@@ -207,7 +209,9 @@ const Hero = () => {
 
             {/* Profile Card Info */}
             <div className="text-center space-y-1 mb-5">
-              <h3 className="text-2xl font-bold text-white">{profileData.fullName}</h3>
+              <h3 className="text-2xl font-bold text-white">
+                {profileData.fullName}
+              </h3>
               <p className="text-sm text-cyan-400 font-semibold">
                 {profileData.designation}
               </p>
@@ -224,16 +228,32 @@ const Hero = () => {
                 <span className="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                 <span className="ml-2">yousuf_profile.json</span>
               </div>
-              <p><span className="text-cyan-400">"cell"</span>: <span className="text-emerald-400">"+88 {profileData.contact.phoneDisplay}"</span>,</p>
-              <p><span className="text-cyan-400">"degree"</span>: <span className="text-yellow-300">"B.Sc. in CSE @ UIU"</span>,</p>
-              <p><span className="text-cyan-400">"diploma"</span>: <span className="text-purple-400">"4 Years (GPA 3.48)"</span>,</p>
-              <p><span className="text-cyan-400">"status"</span>: <span className="text-emerald-400">"Available for Hire"</span></p>
+              <p>
+                <span className="text-cyan-400">"cell"</span>:{" "}
+                <span className="text-emerald-400">
+                  "+88 {profileData.contact.phoneDisplay}"
+                </span>
+                ,
+              </p>
+              <p>
+                <span className="text-cyan-400">"degree"</span>:{" "}
+                <span className="text-yellow-300">"B.Sc. in CSE @ UIU"</span>,
+              </p>
+              <p>
+                <span className="text-cyan-400">"diploma"</span>:{" "}
+                <span className="text-purple-400">"4 Years (GPA 3.48)"</span>,
+              </p>
+              <p>
+                <span className="text-cyan-400">"status"</span>:{" "}
+                <span className="text-emerald-400">"Available for Hire"</span>
+              </p>
             </div>
 
             {/* Quick Contact Micro Footer */}
             <div className="mt-4 pt-3 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
               <span className="flex items-center gap-1 text-slate-300">
-                <HiPhone className="text-cyan-400" /> {profileData.contact.phoneDisplay}
+                <HiPhone className="text-cyan-400" />{" "}
+                {profileData.contact.phoneDisplay}
               </span>
               <a
                 href={profileData.contact.resumePdfUrl}

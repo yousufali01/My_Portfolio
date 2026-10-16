@@ -70,7 +70,7 @@ export const profileData = {
     location: "Dhaka, Bangladesh",
     github: "https://github.com/yousufali01",
     githubVerified: true,
-    linkedin: "https://www.linkedin.com/in/yousufali",
+    linkedin: "https://www.linkedin.com/in/mdyousufali01/",
     linkedinVerified: false,
     resumePdfUrl: "/Md_Yousuf_Ali_Resume.pdf",
     resumeViewUrl: "/resume"
@@ -103,8 +103,8 @@ export const profileData = {
   stats: [
     { label: "Hackathon", value: "Champion" },
     { label: "Diploma GPA", value: "3.48" },
-    { label: "Diploma Duration", value: "4 Yrs" },
-    { label: "Industrial Training", value: "3 Mos" }
+    { label: "Diploma Duration", value: "4 Years" },
+    { label: "Industrial Training", value: "3 Months" }
   ]
 };
 
