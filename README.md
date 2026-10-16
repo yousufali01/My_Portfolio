@@ -36,8 +36,8 @@ Designed for **Yousuf Ali**, Full-Stack Web Developer and Computer Science & Eng
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yousufali01/practice-portfolio-ejp-14.git
-cd practice-portfolio-ejp-14
+git clone https://github.com/yousufali01/My_Portfolio.git
+cd My_Portfolio
 
 # 2. Run directly from root (or navigate into frontend/)
 npm run dev
